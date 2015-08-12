@@ -90,7 +90,7 @@ Rails.application.configure do
       :secret_access_key => Rails.application.secrets.aws_secret_access_key
     }
   }
-
+  config.action_mailer.default_url_options = {:host => "shadefinale.com"}
   config.action_mailer.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
