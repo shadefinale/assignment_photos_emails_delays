@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   private
 
   def send_delayed_email
-    User.delay.send_welcome_email(self.id)
+    User.send_welcome_email(self.id)
   end
 
   def self.send_welcome_email(id)
